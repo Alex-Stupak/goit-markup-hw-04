@@ -8,6 +8,7 @@
   --header-bottom-line: #ececec;
   --footer-text-contacts: rgba(255, 255, 255, 0.6);
   --color-card: #eeeeee;
+  --border-link: #afb1b8;
   --card-set-gap: 30px;
   --padding-section: 94px;
 }
@@ -62,9 +63,6 @@ ul {
 
 /* Page header */
 
-.page-header {
-}
-
 /* Main nav */
 
 .main-nav {
@@ -111,6 +109,26 @@ ul {
   margin-left: auto;
 }
 
+.icon-envelope {
+  margin-right: 10px;
+}
+
+.link-icon {
+  fill: var(--primary-text-color);
+}
+
+.link-icon:hover .icon-envelope {
+  fill: var(--accent-color);
+}
+
+.icon-smartphone {
+  margin-right: 10px;
+}
+
+.link-icon:hover .icon-smartphone {
+  fill: var(--accent-color);
+}
+
 .auth-nav .item + .item {
   margin-left: 50px;
 }
@@ -150,6 +168,8 @@ ul {
 }
 
 .hero-title {
+  width: 696px;
+  margin: auto;
   margin-top: 0;
   margin-bottom: 40px;
 
@@ -160,11 +180,6 @@ ul {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-
-.hero-text {
-  width: 696px;
-  margin: auto;
 }
 
 /* Button */
@@ -230,30 +245,22 @@ ul {
 }
 .section-profession {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 
   font-size: 16px;
-  line-height: 1.19px;
+  line-height: 1.19;
   text-align: center;
 }
 
 /* Features */
 
 .image-style {
-  width: 270px;
-  height: 120px;
-  display: block;
-  content: "";
+  padding: 25px 0px;
+  justify-content: center;
+  display: flex;
   margin-bottom: 30px;
   background-color: var(--button-background-color);
   border-radius: 4px;
-}
-
-.icon-margin {
-  margin: 25px 100px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .icon-size {
@@ -313,18 +320,84 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-list .
+/* Social links team */
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  fill: var(--border-link);
+}
+
+.social-item:hover .social-link {
+  fill: var(--primary-white-color);
+  border-radius: 50%;
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+}
+
+.social-list .social-item + .social-item {
+  margin-left: 10px;
+}
+
+.size-team {
+  width: 20px;
+  height: 20px;
+}
+
+/* Clients */
+
+.title-margin {
+  margin-bottom: 50px;
+}
+
+.client-list {
+  display: flex;
+}
+
+.link-client {
+  display: block;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid var(--border-link);
+  fill: var(--border-link);
+}
+
+.client-item:hover .link-client {
+  fill: var(--accent-color);
+  border: solid 1px var(--accent-color);
+}
+
+.client-icon {
+  width: 106px;
+  height: 60px;
+}
+
+.client-list .client-item + .client-item {
+  margin-left: 30px;
+}
 
 /* Footer */
-
-
 
 .footer-background {
   background-color: var(--background-color-hero);
 }
 
 .footer-background .container {
-  display: block;
+  display: flex;
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -364,6 +437,45 @@ ul {
   font-style: normal;
 }
 
+/* Social footer */
+
+.social-footer {
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+}
+
+.footer-h {
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
+}
+
+.social-item-footer {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-list .social-item-footer + .social-item-footer {
+  margin-left: 10px;
+}
+
+.social-link-footer {
+  display: flex;
+  fill: var(--primary-white-color);
+}
+
+.social-item-footer:hover {
+  background-color: var(--accent-color);
+}
+
 /* portfolio */
 
 .flex-button {
@@ -399,6 +511,12 @@ ul {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.shadow :focus,
+.shadow :hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .section-porfolio {
