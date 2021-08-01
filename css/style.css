@@ -263,11 +263,6 @@ ul {
   border-radius: 4px;
 }
 
-.icon-size {
-  width: 70px;
-  height: 70px;
-}
-
 .hidden-title {
   visibility: hidden;
   font-size: 0;
@@ -348,11 +343,6 @@ ul {
   margin-left: 10px;
 }
 
-.size-team {
-  width: 20px;
-  height: 20px;
-}
-
 /* Clients */
 
 .title-margin {
@@ -378,11 +368,6 @@ ul {
 .client-item:hover .link-client {
   fill: var(--accent-color);
   border: solid 1px var(--accent-color);
-}
-
-.client-icon {
-  width: 106px;
-  height: 60px;
 }
 
 .client-list .client-item + .client-item {
@@ -460,6 +445,7 @@ ul {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -468,7 +454,7 @@ ul {
 }
 
 .social-link-footer {
-  display: flex;
+  display: inline-flex;
   fill: var(--primary-white-color);
 }
 
